@@ -36,8 +36,13 @@ else:
 
 
 
+#input w/ if, else, elif
 
-
-
-x = "no"
-print(f"yes{x}")
+whatstemp = input("whats the fahreneheit rn: ")
+whatstemp = float(whatstemp)
+if whatstemp > 68:
+    print("warm")
+elif whatstemp == 68:
+    print("lol")
+else:
+    print("cold") 
