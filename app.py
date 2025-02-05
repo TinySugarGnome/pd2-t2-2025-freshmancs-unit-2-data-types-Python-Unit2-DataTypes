@@ -58,8 +58,8 @@ def anynumber(number):
     
 number = input("state your number: ")
 print(f"your number is: {anynumber(number)}") """
-
-""" def how_was_it(service):
+""" 
+def how_was_it(service):
     tip = 0
     if service == "bad":
         return(tip + 5)
@@ -74,7 +74,6 @@ print(f"your number is: {anynumber(number)}") """
 service = input("how was your service? ")
 print(f"ok, your tip % is {how_was_it(service)}%")
  """
-
 """ def factors_of_number(number):
     number = int(number)  # Convert input to integer
     factors = ""  # Start with an empty string to store factors
@@ -95,10 +94,6 @@ print(f"The factors of {number} are: {factors_of_number(number)}")
 
 
 
-
-
-
-
 """ def hi(number):
     number = int(number)
     factors = []
@@ -108,8 +103,7 @@ print(f"The factors of {number} are: {factors_of_number(number)}")
     return factors
     
 number = input("state number: ")
-print(f"{number} has the factors {hi(number)}")
-         """
+print(f"{number} has the factors {hi(number)}") """
 
 
 
@@ -122,16 +116,87 @@ print(f"{number} has the factors {hi(number)}")
 
 
 
-
+""" 
 #factors challenge
 
-def hi(number):
-    number = int(number)
+def factor(number):
     factors = []
-    for dividing in range(1, number + 1):
-        if number % dividing == 0:
-            factors += [dividing]
+    for num in range(1, number + 1): #why _ 1? cuz inclusive. if want 17 it would read as 16
+        if number % num == 0:
+            factors.append(num)
     return factors
 
-number = input("state number: ")
-print(f"{number} has the factors: {hi(number)}")
+print(factor(0))
+
+ """
+
+
+"""You will be creating a tip calculator that must accomplish all of the following
+
+Create variables representing at the bill, tip and total amount paid
+Receive user input and assign that user input to the variables in step 1 (excluding total)
+Change the data type of bill from String to Float
+Change the data type of tip to Integer (int)
+Calculate the total that needs to be paid
+Print the f string after the user has input data"""
+
+""" def calcofbill():
+    bill = float(input("what's your bill? "))
+    tip = 0
+    total = 0
+    service = input("how was your meal? ")
+    if service == "bad":
+        tip = bill * 0
+    if service == "okay":
+        tip = bill * 0.15
+    elif service == "good":
+        tip = bill * 0.2
+    elif service == "great":
+        tip = bill * 0.25
+    total = bill + tip
+    print(f"Your bill is: {total}")
+calcofbill()
+ """
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+""" def factors(number):
+    factors = []
+    for divisor in range(1, number + 1):
+        if number % divisor == 0:
+            factors.append(divisor)
+    print(f"The factors are: {factors}")
+factors(100000) """
+
+def gcf(x,y):
+    if x > y:
+        lowest = y
+    else:
+        lowest = x
+    for any in range(1, lowest + 1):
+        if x % any == 0 and y % any == 0:
+            gcf = any
+    print(f"GCF is: {gcf}")
+gcf(100,200)
+
+
+
+
+    
