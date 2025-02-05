@@ -61,16 +61,15 @@ print(f"your number is: {anynumber(number)}") """
 
 def how_was_it(service):
     tip = 0
-    service = int(service)
     if service == "bad":
-        return(tip + 5"%")
+        return(tip + 5)
     elif service == "okay":
-        return(tip + 15"%")
+        return(tip + 15)
     elif service == "good":
-        return(tip + 20"%")
+        return(tip + 20)
     else:
         if service == "great":
-            return(tip += 25"%")
+            return(tip + 25)
 
 service = input("how was your service? ")
-print(f"ok, your tip % is{how_was_it(service)}")
+print(f"ok, your tip % is {how_was_it(service)}%")
