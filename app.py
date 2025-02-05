@@ -23,18 +23,7 @@ print ("Number of words in sentence: ", wordsinsentence(sentence) ) """
 
 
 
-
-
-""" def amt_words(input_sentence):
-    words = 0
-    for i in input_sentence.split():
-        words += 1
-    return words
-
-input_sentence = input("sentence pls: ")
-print("so ur word count is...........: ", input_sentence)
-""" 
- """
+"""
 
 do_you_like_poop = input('do u like poop ')
 if do_you_like_poop == 'yes':
@@ -42,3 +31,13 @@ if do_you_like_poop == 'yes':
 else:
     print("what's wrong with you? ")
  """
+
+
+
+
+
+
+
+
+x = "no"
+print(f"yes{x}")
