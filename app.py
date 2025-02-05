@@ -59,7 +59,7 @@ def anynumber(number):
 number = input("state your number: ")
 print(f"your number is: {anynumber(number)}") """
 
-def how_was_it(service):
+""" def how_was_it(service):
     tip = 0
     if service == "bad":
         return(tip + 5)
@@ -73,3 +73,65 @@ def how_was_it(service):
 
 service = input("how was your service? ")
 print(f"ok, your tip % is {how_was_it(service)}%")
+ """
+
+""" def factors_of_number(number):
+    number = int(number)  # Convert input to integer
+    factors = ""  # Start with an empty string to store factors
+    for dividable in range(1, number + 1):  # Loop through numbers from 1 to number
+        if number % dividable == 0:  # Check if i is a factor
+            factors += str(dividable) + " "  # Add factor to the string with space
+    return factors.strip()  # Remove trailing space and return the string
+
+# Ask for user input
+number = input("Enter a number: ")
+print(f"The factors of {number} are: {factors_of_number(number)}")
+ """
+
+
+
+
+
+
+
+
+
+
+
+
+""" def hi(number):
+    number = int(number)
+    factors = []
+    for dividing in range(1, number + 1):
+        if number % dividing == 0:
+            factors += [dividing]
+    return factors
+    
+number = input("state number: ")
+print(f"{number} has the factors {hi(number)}")
+         """
+
+
+
+
+
+
+
+
+
+
+
+
+
+#factors challenge
+
+def hi(number):
+    number = int(number)
+    factors = []
+    for dividing in range(1, number + 1):
+        if number % dividing == 0:
+            factors += [dividing]
+    return factors
+
+number = input("state number: ")
+print(f"{number} has the factors: {hi(number)}")
