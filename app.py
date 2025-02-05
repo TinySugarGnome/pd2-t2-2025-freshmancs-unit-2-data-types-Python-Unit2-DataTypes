@@ -34,7 +34,7 @@ else:
 
 
 
-
+""" 
 
 #input w/ if, else, elif
 
@@ -45,4 +45,16 @@ if whatstemp > 68:
 elif whatstemp == 68:
     print("lol")
 else:
-    print("cold") 
+    print("cold")  """
+
+#even odd num challenge
+
+def anynumber(number):
+    number = int(number)
+    if number % 2 == 0:
+        return("even")
+    else:
+        return("odd")
+    
+number = input("state your number: ")
+print(f"your number is: {anynumber(number)}")
