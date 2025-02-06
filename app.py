@@ -131,14 +131,7 @@ print(factor(0))
  """
 
 
-"""You will be creating a tip calculator that must accomplish all of the following
-
-Create variables representing at the bill, tip and total amount paid
-Receive user input and assign that user input to the variables in step 1 (excluding total)
-Change the data type of bill from String to Float
-Change the data type of tip to Integer (int)
-Calculate the total that needs to be paid
-Print the f string after the user has input data"""
+#BILL CALCULATOR
 
 """ def calcofbill():
     bill = float(input("what's your bill? "))
@@ -175,7 +168,7 @@ calcofbill()
 
 
 
-
+#FACTORS PROJECT
 
 """ def factors(number):
     factors = []
@@ -184,8 +177,8 @@ calcofbill()
             factors.append(divisor)
     print(f"The factors are: {factors}")
 factors(100000) """
-
-def gcf(x,y):
+#GCF PROJECT
+""" def gcf(x,y):
     if x > y:
         lowest = y
     else:
@@ -194,9 +187,49 @@ def gcf(x,y):
         if x % any == 0 and y % any == 0:
             gcf = any
     print(f"GCF is: {gcf}")
-gcf(100,200)
+gcf(100,200) """
 
 
 
 
+
+
+#ODD EVEN PROJECT
+
+"""
+
+def anynumber(number):
+    number = int(number)
+    if number % 2 == 0:
+        print("even")
+    else:
+        print("odd")
+anynumber(2) """
+
+
+
+
+
+#madlibs
+
+""" def madlibs():
+    verb1 = input("state a verb ")
+    verb2 = input("state your other verb ")
+    noun = input("state a noun ")
+    food = input("state a food ")
+    number = input("state a number ")
+    celeb = input("state your celeb ")
+    madlibs = (f"you were late, so you {verb1} to class, but suddenly, {celeb} appeared! Everyone started {verb2} in to a {noun} because of this, and they started eating {number} {food}(s)")
+    print(madlibs)
+madlibs() """
+
+#wordcount challenge
+
+def userinput():
+    sentence = (input("state a sentence "))
+    wordcount = 0
+    for i in sentence.split():
+        wordcount = wordcount + 1
+    print(f"your wordcount is {wordcount}")
+userinput()
     
