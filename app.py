@@ -212,7 +212,7 @@ anynumber(2) """
 
 #madlibs
 
-""" def madlibs():
+def madlibs():
     verb1 = input("state a verb ")
     verb2 = input("state your other verb ")
     noun = input("state a noun ")
@@ -221,15 +221,15 @@ anynumber(2) """
     celeb = input("state your celeb ")
     madlibs = (f"you were late, so you {verb1} to class, but suddenly, {celeb} appeared! Everyone started {verb2} in to a {noun} because of this, and they started eating {number} {food}(s)")
     print(madlibs)
-madlibs() """
+madlibs()
 
 #wordcount challenge
 
-def userinput():
+""" def userinput():
     sentence = (input("state a sentence "))
     wordcount = 0
     for i in sentence.split():
         wordcount = wordcount + 1
     print(f"your wordcount is {wordcount}")
 userinput()
-    
+     """
